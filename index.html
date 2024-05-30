@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Panel de Control</title>
+</head>
+
+<body>
+  <header class="header-container" id="login-panel">
+    <h2>Bienvenido al Panel de Control</h2>
+    <button id="btnCrearRegistro" class="btn">Crear Registro</button>
+    <button id="btnListarRegistros" class="btn">Listar Registros</button>
+    <div class="links">
+      <a href="#">Cerrar Sesión</a>
+    </div>
+  </header>
+
+
+  <div class="container" id="list" style="display: none">
+    <h2>Listar Registros</h2>
+    <main class="cards" id="cards"></main>
+    <div class="links">
+      <a href="#" id="volverPanel2">Panel de Control</a>
+    </div>
+  </div>
+
+  <section>
+    <div class="container" id="create-form" style="display: none">
+      <h2>Crear Registro</h2>
+      <form id="registroForm">
+        <div class="input-group">
+          <input type="text" id="nombre" placeholder="Nombre" required />
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email" required />
+        </div>
+        <div class="input-group">
+          <input type="tel" id="telefono" placeholder="Teléfono" required />
+        </div>
+        <button type="submit" class="btn">Crear</button>
+      </form>
+      <div class="link">
+        <a href="#" id="volverPanel1">Panel de Control</a>
+      </div>
+    </div>
+
+  </section>
+
+  <script type="module" src="scrit.js"></script>
+</body>
+
+</html>
